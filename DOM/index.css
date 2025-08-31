@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    transition: top 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .navbar-hidden {
+    top: -70px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+  }
+  
+  .navbar a:hover {
+    color: #ff9800;
+  }
+  
+  .content {
+    padding-top: 80px; /* to avoid overlap with fixed navbar */
+  }
+  
