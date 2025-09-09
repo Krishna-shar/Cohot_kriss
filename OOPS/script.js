@@ -1,42 +1,42 @@
-// class Library {
-//     constructor() {
-//         this.books = [];
-//     }
+class Library {
+    constructor() {
+        this.books = [];
+    }
 
-//     addBooks(books) {
-//         this.books.push(...books)
-//     }
-//     listAllBooks() {
-//         this.books.forEach(function (book) {
-//             console.log(`${book.name}`);
-//         })
-//     }
+    addBooks(books) {
+        this.books.push(...books)
+    }
+    listAllBooks() {
+        this.books.forEach(function (book) {
+            console.log(`${book.name}`);
+        })
+    }
 
-// }
+}
 
-// class Book{
-//     constructor(name,isbn,price,author){
-//         this.name = name;
-//         this.isbn = isbn;
-//         this.price = price;
-//         this.author = author;
-//         this.readStatus = false;
+class Book{
+    constructor(name,isbn,price,author){
+        this.name = name;
+        this.isbn = isbn;
+        this.price = price;
+        this.author = author;
+        this.readStatus = false;
 
-//     }
-//     info(){
-//         console.log(`${this.name}is written by ${this.author}  you have ${this.readStatus ? "read it" : "not read this book"} and this available at amazone at ${this.price} price `)
-//     }
-//     changeReadStatus(){
-//         this.readStatus = !this.readStatus;
-//     }
-// }
+    }
+    info(){
+        console.log(`${this.name}is written by ${this.author}  you have ${this.readStatus ? "read it" : "not read this book"} and this available at amazone at ${this.price} price `)
+    }
+    changeReadStatus(){
+        this.readStatus = !this.readStatus;
+    }
+}
 
-// let jhanshiLibrary = new Library()
-// let book1 = new Book(" wealth is life ", "323kklk", 1200, 'abra ka dabra')
-// let book2 = new Book(" Harry potter ", "gojo", 500, 'sakuna kaisen')
-// let book3 = new Book(" jujutsu kaisen ", "inosuke", 1200, 'demon slayer')
+let jhanshiLibrary = new Library()
+let book1 = new Book(" wealth is life ", "323kklk", 1200, 'abra ka dabra')
+let book2 = new Book(" Harry potter ", "gojo", 500, 'sakuna kaisen')
+let book3 = new Book(" jujutsu kaisen ", "inosuke", 1200, 'demon slayer')
 
-//  jhanshiLibrary.addBooks([book1,book2,book3])
+ jhanshiLibrary.addBooks([book1,book2,book3])
 
 
 // class MobileShop {

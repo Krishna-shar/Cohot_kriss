@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, Segoe UI, Roboto, "Helvetica Neue", Arial;
+}
+
+body {
+    margin: 0;
+    background: #f3f4f6;
+    color: #111;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 28px auto;
+    padding: 18px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.sub {
+    color: #555;
+    margin-top: 6px;
+    font-size: 0.95rem;
+}
+
+.app {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.player {
+    flex: 2;
+    padding: 12px;
+    border-right: 1px solid #eee;
+}
+
+.notes {
+    flex: 1;
+    padding: 12px;
+}
+
+.now-playing {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.track-info h2 {
+    margin: 0;
+    font-size: 1.15rem;
+}
+
+.track-info p {
+    margin: 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.controls button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    cursor: pointer;
+}
+
+.progress {
+    margin: 8px 0;
+}
+
+.progress input[type="range"] {
+    width: 100%;
+}
+
+.time {
+    font-size: 0.85rem;
+    color: #444;
+    margin-top: 6px;
+}
+
+.volume {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+.playlist {
+    margin-top: 12px;
+    border-top: 1px dashed #eee;
+    padding-top: 10px;
+    max-height: 240px;
+    overflow: auto;
+}
+
+.song-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.song-item:nth-child(odd) {
+    background: #fbfbfb;
+}
+
+.s-meta {
+    flex: 1;
+    margin-left: 8px;
+}
+
+.s-meta strong {
+    display: block;
+}
+
+.s-actions button {
+    margin-left: 6px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+}
+
+.add-song input {
+    display: block;
+    margin: 6px 0;
+    padding: 8px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.add-song button {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: none;
+    background: #2563eb;
+    color: #fff;
+    cursor: pointer;
+}
+
+.notes form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.notes input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+#notesList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#notesList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    background: #fafafa;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+footer {
+    text-align: center;
+    color: #777;
+    margin-top: 12px;
+    font-size: 0.85rem;
+}
+
+@media(max-width:800px) {
+    .app {
+        flex-direction: column;
+    }
+
+    .player {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+}
