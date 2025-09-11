@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub User Finder</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <script src="Script.js"></script>
-    
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <nav class="w-full bg-gray-800 border-b border-gray-700">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <h1 class="text-xl font-bold text-white">GitHub Finder</h1>
+      <ul class="flex gap-6 text-sm text-gray-300">
+        <li><a href="#" class="hover:text-white">Home</a></li>
+        <li><a href="#" class="hover:text-white">Explore</a></li>
+        <li><a href="#" class="hover:text-white">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero / Search -->
+  <header class="flex flex-col items-center text-center px-6 py-12">
+    <h2 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+      Find Any <span class="text-blue-500">GitHub</span> User
+    </h2>
+    <p class="mt-4 text-gray-400 max-w-xl">
+      Search GitHub profiles to see repositories, followers, and more.
+    </p>
+
+    <form class="w-full max-w-2xl mt-10 flex bg-gray-800 border border-gray-700 rounded-xl overflow-hidden">
+      <input 
+        type="text" 
+        placeholder="Enter GitHub username..." 
+        class="usernameinp flex-1 px-4 py-3 bg-transparent text-gray-200 placeholder-gray-500 focus:outline-none"
+      />
+      <button 
+        type="submit" 
+        class="search px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium transition">
+        Search
+      </button>
+    </form>
+  </header>
+
+  <!-- User Profile Card -->
+  <main class="w-full max-w-3xl mx-auto px-6 pb-20 space-y-10">
+    <div class="card bg-gray-800 border border-gray-700 shadow-xl rounded-2xl p-6 sm:flex sm:gap-8">
+      <!-- Profile will be injected here -->
+    </div>
+
+    <!-- Repositories Section -->
+    <section id="reposSection" class="hidden">
+      <h3 class="text-xl font-bold text-white mb-4">Repositories</h3>
+      <div class="reposList grid gap-4"></div>
+    </section>
+  </main>
+
+  <script src="Scriptsproject.js"></script>
 </body>
 </html>
